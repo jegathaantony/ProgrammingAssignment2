@@ -1,4 +1,14 @@
 ## To find a pair of functions that cache the inverse of a matrix.
+## Overall description
+#   The functions allow you to create the inverse of a matrix and cache the inverse for retrieval
+#   Makes use of <<- to assign variables in the parent environment
+#   Output of makeCacheMatric can be passed to cacheSolve
+#   Example of how to use it:
+#     input <- matrix(1:9,nrow=3,ncol=3)
+#     input$get()
+#     input$getInverse()
+#     getting cached data cacheSolve(input)
+#     input$getInverse()
 
 makeCacheMatrix <- function(x = matrix())
 {
